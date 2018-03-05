@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/window_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_common_toolbar"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_head_img"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:text="头像"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/next"
+            android:layout_marginRight="18dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+    android:background="#EFEFEF"
+    android:layout_width="match_parent"
+    android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_sign"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/signature"
+            android:text="签名"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/next4"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/signature"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/next4"
+            android:layout_marginRight="18dp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:text="昵称"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/next2"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/next2"
+            android:layout_marginRight="18dp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_gender"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="性别"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/next3"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/next3"
+            android:layout_marginRight="18dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/touch_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="手机号"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:textSize="14sp"
+            android:text="未添加"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/icon_next" />
+
+        <TextView
+            tools:text="10000000000"
+            android:visibility="gone"
+            android:id="@+id/tv_phone1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_identical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_identical"
+            android:text="身份标识"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            tools:text="tangzhu"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_identical_real"
+            android:textSize="14sp"
+            android:textColor="#00B5FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_country"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingRight="16dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp">-->
+
+        <!--<TextView-->
+            <!--android:text="地区"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/next5"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/icon_next"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_country"-->
+            <!--android:textSize="14sp"-->
+            <!--android:gravity="right"-->
+            <!--android:singleLine="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/next5"-->
+            <!--android:layout_marginRight="18dp"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

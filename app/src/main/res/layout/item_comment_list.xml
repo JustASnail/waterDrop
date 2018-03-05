@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp">
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_user_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        tools:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_user_head"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:singleLine="true"
+        android:textColor="#172434"
+        android:textSize="16sp"
+        tools:text="李白"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/tv_user_name"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:textColor="#172434"
+        android:textSize="16sp"
+        tools:text="摇匀后像涂改液的质地，快速成膜，不黏腻，后续节省许多时间 痘油皮也可以涂，不刺激，注意避开眼睛周围，就可以了 今年去厦门游"/>
+
+    <com.drops.waterdrop.widget.MyGridView
+        android:id="@+id/grid_view"
+        android:transitionName="shareAnim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:verticalSpacing="3dp"
+        android:horizontalSpacing="3dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_view"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginRight="16dp"
+        android:textColor="#858585"
+        android:textSize="16sp"
+        tools:text="2016-10-28"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_date"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/iv_user_head"
+        android:background="#F4F3F1"/>
+</RelativeLayout>

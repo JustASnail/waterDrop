@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray5"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_common_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.yokeyword.indexablerv.IndexableLayout
+            android:id="@+id/indexableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:indexBar_selectedTextColor="@color/color_activity_blue_bg"
+            app:indexBar_textColor="#666"
+            app:indexBar_textSize="12sp"
+            app:indexBar_textSpace="4dp"/>
+
+        <!--
+            <ImageView
+                android:id="@+id/iv_empty_view"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:src="@drawable/img_all_qs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        -->
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="match_parent"
+                android:layout_height="322dp"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="小仙女"/>
+
+                <ImageView
+                    android:id="@+id/iv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"
+                    android:src="@mipmap/icon_grxx_xb_2"/>
+
+                <ImageView
+                    android:id="@+id/iv_pool_owner_tag"
+                    tools:text="塘主LV.5"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    tools:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+                    <!--android:src="@drawable/icon_grmp_mxtz_1"/>-->
+
+                <ImageView
+                    android:id="@+id/iv_post_owner_tag"
+                    android:layout_width="wrap_content"
+                    tools:visibility="visible"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"/>
+                    <!--android:src="@drawable/icon_grmp_tz_5"/>-->
+
+                <ImageView
+                    android:id="@+id/iv_tang_zhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/icon_wd_mxtangzhu_1"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_tie_zhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/icon_wd_mxtangzhu_1"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="17dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:textColor="#b0b0b0"
+                android:textSize="12sp"
+                tools:text="这里是本仙女的个性签名,好像长一点比较好看～"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_attention_pool"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/touch_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_grxx_gzst"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="关注的水塘"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/icon_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_next"/>
+
+                <TextView
+                    android:id="@+id/tv_attention_pool_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/icon_next"
+                    android:gravity="center_vertical"
+                    android:textColor="#666"
+                    android:textSize="12sp"
+                    tools:text="3"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_create_pool"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/touch_bg"
+                android:visibility="gone"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_grxx_cjst"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="创建的水塘"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/icon_next2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_next"/>
+
+                <TextView
+                    android:id="@+id/tv_create_pool_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/icon_next2"
+                    android:gravity="center_vertical"
+                    android:textColor="#666"
+                    android:textSize="12sp"
+                    tools:text="3"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_collection_post"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/touch_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_grxx_scst"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="收藏的水帖"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/icon_next3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_next"/>
+
+                <TextView
+                    android:id="@+id/tv_collection_post_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/icon_next3"
+                    android:gravity="center_vertical"
+                    android:textColor="#666"
+                    android:textSize="12sp"
+                    tools:text="3"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_create_post"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="26dp"
+                android:visibility="gone"
+                android:background="@drawable/touch_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_grxx_xgst"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="写过的水帖"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/icon_next4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_next"/>
+
+                <TextView
+                    android:id="@+id/tv_create_post_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:layout_toLeftOf="@id/icon_next4"
+                    android:gravity="center_vertical"
+                    android:textColor="#666"
+                    android:textSize="12sp"
+                    tools:text="3"/>
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_bottom_btn"
+        android:visibility="gone"
+        android:background="@drawable/sele_order_pay_btn"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        tools:text="添加朋友"/>
+</LinearLayout>

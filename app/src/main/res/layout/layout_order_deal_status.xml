@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="42dp">
+
+    <ImageView
+        android:layout_marginLeft="16dp"
+        android:id="@+id/iv_country_pic"
+        android:layout_centerVertical="true"
+        android:layout_width="22dp"
+        android:layout_height="14dp" />
+
+    <TextView
+        android:layout_toRightOf="@id/iv_country_pic"
+        android:id="@+id/tv_country"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        tools:text="法国馆"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_deal_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        tools:text="交易成功"
+        android:textColor="@color/color_edt_hint"
+        android:textSize="12sp"
+        android:layout_alignTop="@+id/tv_country"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/window_bg"/>
+</RelativeLayout>

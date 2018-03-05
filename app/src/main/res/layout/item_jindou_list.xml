@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white">
+
+    <View
+        android:background="@color/splite_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#6b6b6b"
+            android:id="@+id/tv_jindou_way"
+            android:layout_width="248dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="2"
+            android:textSize="13sp"
+            tools:text="陈晓雯在火星撞地球水贴中购买了屈臣氏洗啊大苏打啊实打实的" />
+
+        <TextView
+            android:textColor="#c3c3c3"
+            android:id="@+id/tv_jindou_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_jindou_way"
+            android:textSize="11sp"
+            tools:text="2017-07-08  12:23:34" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginEnd="16dp"
+        android:id="@+id/tv_jindou_sum"
+        tools:text="+1234"
+        android:textColor="@color/jindou_add"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/splite_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</RelativeLayout>

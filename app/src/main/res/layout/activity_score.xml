@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:hzh="http://schemas.android.com/apk/res-auto"
+    android:background="@color/window_bg">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/layout_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="36dp">
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_goods"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/color_edt_hint"
+            android:textSize="14sp"
+            android:text="TISSOT唯路时精钢男士石英手表时尚潮流时装表牛皮表带手表" />
+
+        <com.drops.waterdrop.widget.HZHRatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            hzh:clickable="true"
+            hzh:halfstart="false"
+            hzh:starCount="5"
+            hzh:starEmpty="@mipmap/icon_pf_star_2"
+            hzh:starFill="@mipmap/icon_pf_star_1"
+            hzh:starHalf="@mipmap/icon_pf_star_1"
+            hzh:starImageHeight="50dp"
+            hzh:starImageWidth="50dp"
+            hzh:starImagePadding="10dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/layout_goods"
+        android:id="@+id/btn_comment"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/sele_btn_regist"
+        android:text="立即评分"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

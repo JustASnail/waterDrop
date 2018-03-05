@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/window_bg"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_company_account"
+                app:kvName="@string/company_account"
+                app:kvValueHint="@string/hint_company_account"
+                app:kvValueGravity="left"
+                app:kvValueEditable="true"
+                app:kvInputType="number"
+                style="@style/BindBankCardKVStyle"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_company_name"
+                app:kvName="@string/company_name"
+                app:kvValueHint="@string/hint_company_name"
+                app:kvValueGravity="left"
+                app:kvValueEditable="true"
+                style="@style/BindBankCardKVStyle"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_bank_name"
+                app:kvName="@string/bank_name"
+                app:kvValueHint="@string/hint_bank_name"
+                app:kvValueGravity="left"
+                app:kvValueEditable="true"
+                style="@style/BindBankCardKVStyle"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_create_account_province"
+                app:kvName="@string/create_account_province"
+                app:kvValueHint="@string/please_select"
+                app:kvArrow="true"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                style="@style/BindBankCardKVStyle"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_create_account_city"
+                app:kvName="@string/create_account_city"
+                app:kvValueHint="@string/please_select"
+                app:kvArrow="true"
+                app:kvValueGravity="right"
+                app:kvValueEditable="false"
+                style="@style/BindBankCardKVStyle"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_create_account_bank"
+                app:kvName="@string/create_account_bank"
+                app:kvValueHint="@string/hint_create_account_bank"
+                app:kvValueGravity="left"
+                app:kvValueEditable="true"
+                style="@style/BindBankCardKVStyle"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_transfer_info"
+                app:kvName="@string/transfer_info"
+                app:kvValueHint="@string/look"
+                app:kvArrow="true"
+                app:kvValueGravity="right"
+                app:kvValueEditable="false"
+                style="@style/BindBankCardKVStyle"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abbc_transfer_certificate"
+                app:kvName="@string/transfer_certificate"
+                app:kvValueHint="@string/hint_transfer_certificate"
+                app:kvValueGravity="left"
+                app:kvValueEditable="false"
+                app:kvHasRightImage="true"
+                app:kvRightImage="@mipmap/icon_wd_zh_scpz"
+                app:kvRightImageWidth="65dp"
+                app:kvRightImageHeight="44dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/abbc_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/sele_btn_regist"
+                android:text="@string/submit_review"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/abbc_tips"
+                android:textSize="12sp"
+                android:textColor="@color/color_grey_888888"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

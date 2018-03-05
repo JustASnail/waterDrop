@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_common_toolbar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="姓名"
+                    android:textColor="#666"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/id_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/name"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="身份证"
+                    android:textColor="#666"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_id_card_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignTop="@id/id_card"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/id_card"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入身份证号"
+                    android:maxLength="18"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@id/et_id_card_no"
+                    android:layout_alignTop="@id/name"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/id_card_notes"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@id/rl_edit"
+                android:gravity="center_vertical"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="@string/put_id_card_notes"
+                android:textColor="#858585"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_id_card_front"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/id_card_notes"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/id_card_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="身份证正面"
+                    android:textColor="#666"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_id_card_front"
+                    android:layout_width="108dp"
+                    android:layout_height="68dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/id_card_front"
+                    android:src="@mipmap/icon_wylp_wsc"/>
+
+                <TextView
+                    android:id="@+id/tv_pull_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pull"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_id_card_reverse"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/rl_id_card_front"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/id_card_reverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="身份证反面"
+                    android:textColor="#666"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_id_card_back"
+                    android:layout_width="108dp"
+                    android:layout_height="68dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/id_card_reverse"
+                    android:src="@mipmap/icon_wylp_wsc"/>
+
+                <TextView
+                    android:id="@+id/tv_pull_reverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pull"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/sele_btn_regist"
+                android:text="确认"
+                android:textColor="@color/white"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:text="注：为保证您的订单有效，请如实填写收货人的身份证信息！"
+                android:textColor="#858585"
+                android:textSize="@dimen/text_size_11"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

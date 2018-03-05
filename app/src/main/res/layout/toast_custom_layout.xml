@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="207dp"
+                android:layout_height="207dp"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:alpha="0.99"
+                android:background="@drawable/shape_toast_bg"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_toast"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/pop_check"/>
+
+    <TextView
+        android:id="@+id/tv_toast_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_toast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="已发送"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_toast_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_toast_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        tools:text="已发送加群请求， 等待塘主同意"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

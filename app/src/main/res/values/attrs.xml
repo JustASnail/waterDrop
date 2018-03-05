@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 分页标签 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsCheckedTextColor" format="reference"/>
+        <attr name="pstsUncheckedTextColor" format="reference"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 左右文本 -->
+    <declare-styleable name="TwoTextView">
+
+        <!-- 左边文本内容 -->
+        <attr name="ttLeftText" format="string|reference"/>
+        <!-- 右边文本内容 -->
+        <attr name="ttRightText" format="string|reference"/>
+        <!-- 左边文本字体大小 -->
+        <attr name="ttLeftTextSize" format="dimension"/>
+        <!-- 右边文本字体大小 -->
+        <attr name="ttRightTextSize" format="dimension"/>
+        <!-- 左边文本颜色 -->
+        <attr name="ttLeftTextColor" format="reference"/>
+        <!-- 右边文本颜色 -->
+        <attr name="ttRightTextColor" format="reference"/>
+    </declare-styleable>
+
+<!--自定义变色字体-->
+    <attr name="text" format="string" />
+    <attr name="text_size" format="dimension" />
+    <attr name="text_origin_color" format="color|reference" />
+    <attr name="text_change_color" format="color|reference" />
+    <attr name="progress" format="float" />
+    <attr name="direction">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="top" value="2" />
+        <enum name="bottom" value="3" />
+    </attr>
+
+    <declare-styleable name="ColorTrackView">
+        <attr name="text" />
+        <attr name="text_size" />
+        <attr name="text_origin_color" />
+        <attr name="text_change_color" />
+        <attr name="progress" />
+        <attr name="direction" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewEx">
+        <attr name="exiv_default_image_res" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="GoogleCircleProgressView">
+        <attr name="gcp_inner_radius" format="dimension"/>
+        <attr name="gcp_background_color" format="color"/>
+        <attr name="gcp_progress_color" format="color"/>
+        <attr name="gcp_progress_stoke_width" format="dimension"/>
+        <attr name="gcp_show_arrow" format="boolean"/>
+        <attr name="gcp_enable_circle_background" format="boolean"/>
+        <attr name="gcp_arrow_width" format="dimension"/>
+        <attr name="gcp_arrow_height" format="dimension"/>
+
+        <attr name="gcp_progress" format="integer"/>
+        <attr name="gcp_max" format="integer"/>
+
+
+        <attr name="gcp_progress_text_size" format="dimension"/>
+        <attr name="gcp_progress_text_color" format="color"/>
+
+        <!--<attr name="gcp_progress_text_offset" format="dimension"/>-->
+
+        <attr name="gcp_progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--购物车加减控件-->
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--水塘3d 翻页-->
+    <attr name="ratio" format="float" />
+    <attr name="card_padding" format="dimension" />
+    <attr name="card_margin" format="dimension" />
+    <attr name="card_max_offset" format="dimension" />
+
+    <declare-styleable name="ElasticCardView">
+        <attr name="ratio" />
+    </declare-styleable>
+
+    <declare-styleable name="CardViewPager">
+        <attr name="card_padding" />
+        <attr name="card_margin" />
+        <attr name="card_max_offset" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar" tools:ignore="ResourceName">
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starImageWidth" format="dimension"/>
+        <attr name="starImageHeight" format="dimension"/>
+        <attr name="starImagePadding" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starNum" format="integer"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+        <attr name="starHalf" format="reference"/>
+        <attr name="clickable" format="boolean"/>
+        <attr name="halfstart" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LogisticsInfoView">
+        <attr name="width_in" format="dimension"/>
+        <attr name="radius_in" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="KVCombinationView">
+        <attr name="kvName" format="reference|string" />
+        <attr name="kvNameColor" format="color|reference" />
+        <attr name="kvValueHint" format="reference|string" />
+        <attr name="kvValueHintColor" format="color|reference" />
+        <attr name="kvValueColor" format="color|reference" />
+        <attr name="kvValue" format="reference|string" />
+        <attr name="kvValueEditable" format="boolean" />
+        <attr name="kvValueGravity" format="enum">
+            <enum name="left" value="0x03" />
+            <enum name="right" value="0x05" />
+        </attr>
+        <attr name="kvArrow" format="boolean" />
+        <attr name="kvHasRightImage" format="boolean" />
+        <attr name="kvRightImage" format="reference" />
+        <attr name="kvRightImageWidth" format="dimension" />
+        <attr name="kvRightImageHeight" format="dimension" />
+        <attr name="kvInputType" format="enum">
+            <enum name="text" value="0x00000001" />
+            <enum name="textPassword" value="0x00000081" />
+            <enum name="number" value="0x00000002" />
+            <enum name="numberPassword" value="0x00000012" />
+            <enum name="phone" value="0x00000003" />
+        </attr>
+        <attr name="kvBackground" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LongDrawerView">
+        <attr name="ld_menu_text" format="string" />
+        <attr name="ld_menu_text_color" format="color" />
+        <attr name="ld_menu_text_size" format="dimension" />
+        <attr name="ld_menu_paddingLeft" format="dimension" />
+        <attr name="ld_menu_paddingRight" format="dimension" />
+        <attr name="ld_menu_paddingTop" format="dimension" />
+        <attr name="ld_menu_paddingBottom" format="dimension" />
+        <attr name="ld_menu_drawableLeft" format="reference" />
+        <attr name="ld_menu_drawableRight" format="reference" />
+        <attr name="ld_menu_drawablePadding" format="dimension" />
+        <attr name="ld_menu_background" format="reference" />
+        <attr name="ld_extend_background" format="reference" />
+        <attr name="ld_extend_paddingLeft" format="dimension" />
+        <attr name="ld_extend_paddingTop" format="dimension" />
+        <attr name="ld_extend_paddingRight" format="dimension" />
+        <attr name="ld_extend_paddingBottom" format="dimension" />
+        <attr name="ld_extend_item_spacing" format="dimension" />
+        <attr name="ld_tips_text" format="string" />
+        <attr name="ld_tips_text_color" format="color" />
+        <attr name="ld_tips_text_size" format="dimension" />
+        <attr name="ld_tips_drawableLeft" format="reference" />
+        <attr name="ld_tips_drawableRight" format="reference" />
+        <attr name="ld_tips_drawablePadding" format="dimension" />
+        <attr name="ld_loadingview_side" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MZBannerView">
+        <attr name="open_mz_mode" format="boolean"/>
+        <attr name="canLoop" format="boolean"/>
+        <attr name="indicatorPaddingLeft" format="dimension"/>
+        <attr name="indicatorPaddingRight" format="dimension"/>
+        <attr name="indicatorPaddingTop" format="dimension"/>
+        <attr name="indicatorPaddingBottom" format="dimension"/>
+        <attr name="indicatorAlign">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="middle_page_cover" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_sign"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/dp_4"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_pool_info"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        >
+
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/icon_default_head_info"/>
+
+        <TextView
+            android:id="@+id/tv_pool_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_head"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:singleLine="true"
+            android:text="周杰伦"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/tv_pool_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_head"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:singleLine="true"
+            android:text="快点使用双截棍、 哼哼哈嘿..."
+            android:textColor="@color/color_edt_hint"/>
+
+        <TextView
+            android:id="@+id/tv_re_du_num"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_re_du"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:text="35"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

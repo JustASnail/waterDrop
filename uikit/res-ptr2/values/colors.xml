@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="left_ball_color">#7f01020a</color>
+    <color name="right_ball_color">#7f01020b</color>
+    <color name="item_hover">#dbdbdb</color>
+
+    <color name="c_grey_8">#888888</color>
+    <color name="c_green">#34A853</color>
+    <color name="c_red">#f23030</color>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_common_toolbar"/>
+
+<ImageView
+    android:id="@+id/iv_pay_top_icon"
+    android:layout_below="@id/toolbar"
+    android:layout_marginTop="37dp"
+    android:layout_centerHorizontal="true"
+    android:src="@mipmap/icon_dd_zfcg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_pay_result"
+        android:layout_below="@id/iv_pay_top_icon"
+        android:layout_marginTop="14dp"
+        android:text="支付成功"
+        android:textColor="#F1003B"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_pay_result_desc"
+        android:layout_below="@id/tv_pay_result"
+        android:layout_marginTop="14dp"
+        android:text="感谢您在水滴平台购买商品"
+        android:textColor="#b0b0b0"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_pay_bottom_img"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_pay_result_desc"
+        android:layout_marginTop="39dp"
+        android:src="@mipmap/img_dd_zfcg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

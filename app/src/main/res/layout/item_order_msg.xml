@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/icon_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_xx_wlxx"/>
+
+    <ImageView
+        android:id="@+id/icon_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/icon_flag"
+        android:src="@drawable/icon_grxx_ts"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/icon_flag"
+        tools:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:singleLine="true"
+        android:textColor="#858585"
+        android:textSize="11sp"
+        tools:text="234234"/>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_date"
+        android:layout_toRightOf="@id/iv_head"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="订单已签收"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_courier_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_edt_hint"
+            android:textSize="14sp"
+            tools:text="(顺丰快递)"/>
+    </LinearLayout>
+<TextView
+    android:id="@+id/tv_content"
+    android:singleLine="true"
+    android:layout_below="@id/ll_title"
+    android:layout_alignLeft="@id/ll_title"
+    android:layout_marginRight="16dp"
+    android:textColor="@color/black"
+    android:textSize="11sp"
+    android:layout_marginTop="2dp"
+    tools:text="layout_widthlayout_widthlayout_widthlayout_widthlayout_width"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_order_code"
+        android:singleLine="true"
+        android:layout_below="@id/tv_content"
+        android:layout_alignLeft="@id/ll_title"
+        android:layout_marginRight="16dp"
+        android:textColor="#b0b0b0"
+        android:textSize="11sp"
+        android:layout_marginTop="1dp"
+        tools:text="layout_widthlayout_widthlayout_widthlayout_widthlayout_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_color"/>
+</RelativeLayout>

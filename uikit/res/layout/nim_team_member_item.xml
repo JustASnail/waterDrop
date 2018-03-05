@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/imageViewHeader"
+            tools:background="@color/black"
+            android:layout_width="33dp"
+            android:layout_height="33dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/nim_team_owner_icon"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageViewAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/nim_team_admin_icon"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageViewDeleteTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:contentDescription="@string/empty"
+            android:visibility="gone"
+            android:src="@drawable/nim_team_member_item_delete_icon"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayoutHead"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        tools:text="asdfasdf"
+        android:maxWidth="60dip"
+        android:singleLine="true"
+        android:textColor="#858585"
+        android:textSize="11sp">
+    </TextView>
+
+</RelativeLayout>

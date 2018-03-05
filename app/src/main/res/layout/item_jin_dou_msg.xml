@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+    <ImageView
+        android:id="@+id/icon_flag"
+        android:src="@drawable/icon_xx_jdzhbd"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/icon_point"
+        android:visibility="gone"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/icon_flag"
+        android:src="@drawable/icon_grxx_ts"
+        android:layout_marginLeft="-5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_alignParentRight="true"
+        tools:text="234234"
+        android:singleLine="true"
+        android:textColor="#858585"
+        android:textSize="11sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        tools:text="精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐"
+        android:layout_alignTop="@id/icon_flag"
+        android:layout_toRightOf="@id/icon_flag"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="90dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        tools:text="精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐精品推荐"
+        android:textColor="#858585"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:textSize="11sp"
+        android:lines="2"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/line_color"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</RelativeLayout>

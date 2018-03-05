@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rl_not_start"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_not_start"
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:src="@drawable/test_not_start"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sele_commn_back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="50dp"
+                    android:padding="12dp"
+                    android:visibility="gone"
+                    android:layout_height="?attr/actionBarSize"/>
+
+                <TextView
+                    android:id="@+id/tv_commn_title"
+                    android:textSize="18sp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <com.netease.nim.uikit.common.ui.widget.DrawableCenterTextView
+        android:id="@+id/search_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@drawable/shape_btn_login_white"
+        android:drawableLeft="@drawable/icon_search"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="搜索"
+        android:textSize="14sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_pool"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+            android:id="@+id/iv_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/nim_avatar_group"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/iv_head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="我的水塘"/>
+
+
+        <ImageView
+            android:src="@drawable/icon_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</LinearLayout>

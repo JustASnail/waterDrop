@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/window_bg"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_common_toolbar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_above="@+id/btn_ok"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:text="收货人"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_below="@id/name"
+                    android:background="@color/window_bg"/>
+
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line1"
+                    android:gravity="center_vertical"
+                    android:text="手机号"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_below="@id/phone"
+                    android:background="@color/window_bg"/>
+
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line2"
+                    android:gravity="center_vertical"
+                    android:text="所在区域"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_below="@id/area"
+                    android:background="@color/window_bg"/>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line3"
+                    android:gravity="center_vertical"
+                    android:text="详细地址"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_below="@id/address"
+                    android:background="@color/window_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:id="@+id/id_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line4"
+                    android:gravity="center_vertical"
+                    android:text="身份证"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#666666"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/phone"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入联系人姓名"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+                    android:paddingRight="16dp"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/name"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/phone"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入联系人电话"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingRight="16dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/phone"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/phone"
+                    android:drawableRight="@drawable/icon_next"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="2"
+                    android:paddingRight="16dp"
+                    android:text="请选择"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/area"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/phone"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入详细地址"
+                    android:inputType="text"
+                    android:maxLines="2"
+                    android:paddingRight="16dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"/>
+
+
+
+                <EditText
+                    android:id="@+id/et_id_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/line4"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@id/phone"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入身份证号"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingRight="16dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/id_card_notes"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@id/rl_edit"
+                android:paddingLeft="9dp"
+                android:gravity="center_vertical"
+                android:paddingRight="9dp"
+                android:text="@string/put_id_card_notes"
+                android:textColor="#858585"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_id_card_front"
+                android:layout_below="@id/id_card_notes"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/id_card_front"
+                    android:text="身份证正面"
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_id_card_front"
+                    android:src="@mipmap/icon_wylp_wsc"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_card_front"
+                    android:layout_width="108dp"
+                    android:layout_height="68dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pull_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pull"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_id_card_reverse"
+                android:layout_below="@id/rl_id_card_front"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/id_card_reverse"
+                    android:text="身份证反面"
+                    android:textSize="14sp"
+                    android:textColor="#666"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_id_card_back"
+                    android:src="@mipmap/icon_wylp_wsc"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_card_reverse"
+                    android:layout_width="108dp"
+                    android:layout_height="68dp"/>
+
+                <TextView
+                    android:id="@+id/tv_pull_reverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pull"
+                    android:drawablePadding="7dp"
+                    android:gravity="center"
+                    android:text="上传"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/set_default"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rl_id_card_reverse"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="设为默认地址"
+                android:textColor="#666666"
+                android:textSize="14sp"/>
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/set_default"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:theme="@style/SwitchCompat"/>
+
+            <TextView
+                android:layout_below="@id/set_default"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#858585"
+                android:layout_marginLeft="16dp"
+                android:text="注：为保证您的订单有效，请如实填写收货人的身份证信息！"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="9dp"
+        android:background="@color/white"
+        android:text="确定"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"/>
+</RelativeLayout>

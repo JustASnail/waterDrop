@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_common_toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="82dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="姓名"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:layout_marginStart="82dp"
+                android:gravity="center_vertical"
+                android:hint="请输入领票人身份证姓名"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/color_edt_hint"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="16dp"
+                android:layout_height="1px"
+                android:layout_below="@id/name"
+                android:background="@color/splite_line" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/line1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="手机号码"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/line1"
+                android:background="@color/white"
+                android:layout_marginStart="82dp"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号码"
+                android:paddingRight="16dp"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/line1"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/color_edt_hint"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/tv_phone"
+                android:background="@color/splite_line" />
+
+            <TextView
+                android:id="@+id/id_card"
+                android:layout_width="82dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/line3"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="身份证"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/line3"
+                android:background="@color/white"
+                android:layout_marginStart="82dp"
+                android:gravity="center_vertical"
+                android:hint="请输入领票人身份证号"
+                android:paddingRight="16dp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/line3"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/color_edt_hint"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_card_notes"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/id_card"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/id_card_notes"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pull_front"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_card_notes"
+                android:background="@color/white"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:id="@+id/id_card_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp"
+                    android:text="身份证正面"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_id_card_front"
+                    android:layout_width="108dp"
+                    android:layout_height="68dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_card_front"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_pull_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pull"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="上传"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pull_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_pull_front"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp">
+
+
+                <TextView
+                    android:id="@+id/id_card_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp"
+                    android:text="身份证反面"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_id_card_back"
+                    android:layout_width="108dp"
+                    android:layout_height="68dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/id_card_back"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_pull_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/icon_pull"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="上传"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/area"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/rl_pull_back"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="所在区域"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/area"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:drawableRight="@drawable/icon_next"
+                android:gravity="center_vertical|right"
+                android:maxLines="2"
+                android:paddingRight="16dp"
+                android:text="请选择"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_area2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/area"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingRight="16dp"
+                android:textColor="@color/color_edt_hint"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="16dp"
+                android:layout_height="2px"
+                android:layout_below="@id/area"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/line2"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="详细地址"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/address"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="请输入您的详细地址"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/address"
+                android:layout_marginStart="82dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:singleLine="true"
+                android:textColor="@color/color_edt_hint"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/address"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/sele_btn_regist"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/get_ticket_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_ok"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/get_ticket_notes"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

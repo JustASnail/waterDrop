@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:layout_marginTop="10dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    tools:showIn="@layout/activity_withdraw">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cdv_bank"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_bank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:paddingEnd="16dp"
+                android:paddingStart="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tv_bank_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="暂无银行" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:id="@+id/tv_bank_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    tools:text="**** **** **** 1234"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <ImageView
+                android:paddingEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_wd_yj_3" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

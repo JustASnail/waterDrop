@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03B1FF</color>
+    <color name="colorPrimaryDark">#03B1FF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryBlue">#149bcc</color>
+
+    <color name="colorRed">#F1003B</color>
+    <color name="colorGreen">#00eb49</color>
+
+    <color name="colorRedPress">#a80029</color>
+
+
+    <color name="colorBlue">@color/colorPrimary</color>
+    <color name="colorBluePress">#027bb2</color>
+
+
+
+    <color name="color_network_bar_bg_ee4b62">#ee4b62</color>
+    <color name="color_main_tab_text_selec">#03B1FF</color>
+    <color name="color_main_tab_text_normal">#fff</color>
+
+    <color name="color_grey_888888">#888888</color>
+    <color name="color_grey_666666">#666666</color>
+    <color name="color_grey_fafafa">#fafafa</color>
+    <color name="color_grey_f4f4f4">#f4f4f4</color>
+    <color name="color_edt_hint">#B0B0B0</color>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+
+    <color name="window_bg">#f9f9f9</color>
+    <color name="line_color">#efefef</color>
+    <color name="gray_color">#bcbcbc</color>
+    <color name="color_d2d2d2">#D2D2D2</color>
+
+    <color name="google_blue">#4285F4</color>
+    <color name="text_red">#f23030</color>
+    <color name="google_green">#34A853</color>
+    <color name="google_yellow">#FBBC05</color>
+
+    <color name="jindou_bg">@color/colorPrimary</color>
+    <color name="price_color">#FB6526</color>
+    <color name="splite_line">#efefef</color>
+    <color name="jindou_add">#ff004d</color>
+    <color name="jindou_cut">#00D743</color>
+    <color name="grar_dedede">#DEDEDE</color>
+    <color name="grar_dcdcdc">#DCDCDC</color>
+    <color name="tab_text">#9d9d9d</color>
+    <color name="test">#1000</color>
+
+
+    <color name="color_guide1">#35BAF4</color>
+    <color name="color_guide2">#B58BED</color>
+    <color name="color_guide3">#72E8DC</color>
+
+
+    <color name="base_gray_e3">#e3e3e3</color>
+    <color name="base_gray_ca">#cacaca</color>
+    <color name="base_gray_85">#858585</color>
+    <color name="base_gray_eb">#ebebeb</color>
+    <color name="base_gray_e1">#e1e1e1</color>
+
+    <color name="base_black_2a">#2a2a2a</color>
+    <color name="base_black_516978">#516978</color>
+</resources>

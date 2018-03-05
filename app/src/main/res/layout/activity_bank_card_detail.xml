@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/window_bg"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_common_toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_company_account"
+                app:kvName="@string/company_account"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_company_name"
+                app:kvName="@string/company_name"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_bank_name"
+                app:kvName="@string/bank_name"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_create_account_province"
+                app:kvName="@string/create_account_province"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_create_account_city"
+                app:kvName="@string/create_account_city"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_create_account_bank"
+                app:kvName="@string/create_account_bank"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_bind_date"
+                app:kvName="@string/bind_date"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_transfer_info"
+                app:kvName="@string/transfer_info"
+                app:kvValueHint="@string/look"
+                app:kvArrow="true"
+                app:kvValueGravity="right"
+                app:kvValueEditable="false"
+                android:padding="16dp"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_transfer_certificate"
+                app:kvName="@string/transfer_certificate"
+                app:kvValueGravity="left"
+                app:kvValueEditable="false"
+                app:kvHasRightImage="true"
+                app:kvRightImageWidth="65dp"
+                app:kvRightImageHeight="44dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/abcd_apply_status"
+                app:kvName="@string/apply_status"
+                app:kvValueEditable="false"
+                app:kvValueGravity="right"
+                android:padding="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/abcd_bind_fail_area"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:padding="16dp"
+                android:gravity="right"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/hint_bind_bank_card_fail"
+                    android:textSize="14sp"
+                    android:textColor="@color/color_grey_888888"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/abcd_re_submit"
+                    android:text="@string/re_submit"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/sele_btn_regist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

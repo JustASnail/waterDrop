@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend_friend"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon_recommend_friend"
+            android:src="@drawable/icon_txl_knrsdr"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_toRightOf="@id/icon_recommend_friend"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="您可能认识的人"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_new_friend"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon_new_friend"
+            android:src="@drawable/icon_txl_yzxx"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/my_pool"
+            android:layout_toRightOf="@id/icon_new_friend"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="验证消息"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_alignLeft="@id/my_pool"
+            android:layout_alignParentBottom="true"
+            android:background="@color/window_bg"
+            android:layout_width="match_parent"
+            android:layout_height="2px"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_qun"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/icon_my_pool"
+            android:src="@drawable/icon_txl_tfq"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_my_qun"
+            android:layout_toRightOf="@id/icon_my_pool"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="铁粉群"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+<!--
+        <TextView
+            android:id="@+id/tab_new_msg_label"
+            android:layout_toRightOf="@id/tv_my_qun"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/nim_g_unread_badge"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+-->
+
+        <ImageView
+            android:src="@drawable/icon_next"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

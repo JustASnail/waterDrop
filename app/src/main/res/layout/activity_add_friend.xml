@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_addfriend"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/status_bar_fix"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            >
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sele_commn_back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="4dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_commn_title"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                tools:text="title"
+                android:textStyle="bold"
+                android:maxLength="14"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.drops.waterdrop.widget.DrawableCenterTextView
+            android:id="@+id/search_view_text"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_btn_search_bg"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="搜索"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="14sp"
+        android:text="通讯录好友"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/indexableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:indexBar_selectedTextColor="@color/colorPrimary"
+        app:indexBar_textColor="#666"
+        app:indexBar_textSize="10sp"
+        app:indexBar_textSpace="4dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_no_permission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="没有开启 获取通讯录 的权限， 请在设置里开启"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

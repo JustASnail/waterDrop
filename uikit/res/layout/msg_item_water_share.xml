@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+    >
+
+    <!--水宝-->
+        <include
+            android:id="@+id/layout_goods"
+            android:visibility="gone"
+            tools:visibility="visible"
+            layout="@layout/layout_share_card_goods"/>
+
+    <!--水塘-->
+        <include
+            android:id="@+id/layout_pool"
+            android:visibility="gone"
+            layout="@layout/layout_share_card_pool"/>
+
+
+    <!--水帖-->
+        <include
+            android:id="@+id/layout_tip"
+            android:visibility="gone"
+            layout="@layout/layout_share_card_tip"/>
+</FrameLayout>

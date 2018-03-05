@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/touch_bg"
+    >
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+       />
+
+
+<TextView
+    android:id="@+id/tv_nickname"
+    tools:text="张三"
+    android:layout_toRightOf="@id/iv_avatar"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="16dp"
+    android:textSize="14sp"
+    android:layout_marginLeft="12dp"
+    android:textColor="@color/black"
+    android:singleLine="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line"/>
+</RelativeLayout>

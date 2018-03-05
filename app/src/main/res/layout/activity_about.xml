@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_common_toolbar"/>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="水滴无界v2.0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_marginTop="6dp"
+        android:id="@+id/iv_debug"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="65dp"
+        android:layout_height="17dp" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_invite_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/touch_bg"
+        android:drawableRight="@drawable/icon_next"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="官方微博"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/splite_line" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/touch_bg"
+        android:drawableRight="@drawable/icon_next"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="官方微信"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</LinearLayout>

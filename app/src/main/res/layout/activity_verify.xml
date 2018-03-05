@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/window_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_common_toolbar"/>
+
+
+    <include
+        android:background="@color/window_bg"
+        layout="@layout/layout_user_view"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_sign"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="@dimen/dp_4"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <EditText
+            android:id="@+id/edt_verify_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="top|left"
+            android:textSize="16sp"
+            android:maxLength="150"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tv_text_length"
+            android:layout_gravity="bottom|right"
+            android:textColor="@color/color_edt_hint"
+            android:text="22/150"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:text="您需要发送验证申请，等待对方通过"
+        android:textColor="@color/color_edt_hint"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

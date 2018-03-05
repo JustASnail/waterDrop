@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="12dp">
+
+    <ImageView
+        android:id="@+id/address_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_daohang"/>
+
+    <ImageView
+        android:id="@+id/address_icon_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_next"/>
+
+
+    <TextView
+        android:id="@+id/tv_no_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/address_icon"
+        android:layout_toLeftOf="@id/address_icon_next"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="您还没有收货地址， 点击新增"
+        android:textColor="#172434"
+        android:textSize="14sp"
+        android:visibility="gone"
+       />
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/address_icon_next"
+        android:layout_toRightOf="@id/address_icon"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:id="@+id/tv_consignee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="小王"/>
+
+        <TextView
+            android:id="@+id/tv_consignee_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_consignee_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_consignee_name"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="17600000000"/>
+
+        <TextView
+            android:id="@+id/tv_consignee_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:singleLine="true"
+            android:textColor="@color/color_edt_hint"
+            android:textSize="12sp"
+            tools:text="上海市浦东软件园郭守敬路498号 28号楼2号楼分部"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

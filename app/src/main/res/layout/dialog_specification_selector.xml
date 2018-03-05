@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/dialog_empty"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:id="@+id/dialog_price_area"
+            android:layout_below="@+id/dialog_empty"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="124dp"
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingRight="16dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dialog_price"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_red"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/dialog_close"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/icon_xgg_qx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/dialog_num"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/base_gray_85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dialog_selected_spec"
+                android:textSize="12sp"
+                android:textColor="@color/base_gray_85"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dialog_spec_area"
+            android:layout_below="@+id/dialog_price_area"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/line"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:text="规格"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/dialog_spec_container"
+                app:flexWrap="wrap"
+                app:dividerDrawable="@drawable/shape_speci_container_divider"
+                app:showDivider="middle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="数量"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.drops.waterdrop.widget.AmountView
+                    android:id="@+id/dialog_amount"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/dialog_buy"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/sele_order_pay_btn_red"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/dialog_photo"
+            android:layout_above="@+id/dialog_spec_area"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

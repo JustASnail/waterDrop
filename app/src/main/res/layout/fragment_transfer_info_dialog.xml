@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ftid_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/img_wdzh_zhxx_qx"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ftid_close"
+        android:background="@drawable/shape_transfer_info_dialog_style"
+
+        android:orientation="vertical">
+
+        <com.drops.waterdrop.widget.TopYuanJiaoImageView
+            android:id="@+id/ftid_head_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/ftid_create_account_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="18dp"
+                app:kvBackground="@color/color_grey_fafafa"
+                app:kvName="@string/create_account_bank"
+                app:kvNameColor="@color/color_grey_888888"
+                app:kvValueColor="@color/color_grey_555555"
+                app:kvValueEditable="false"
+                app:kvValueGravity="left"/>
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/ftid_account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="18dp"
+                app:kvBackground="@color/color_grey_f4f4f4"
+                app:kvName="@string/account_name"
+                app:kvNameColor="@color/color_grey_888888"
+                app:kvValueColor="@color/color_grey_555555"
+                app:kvValueEditable="false"
+                app:kvValueGravity="left"/>
+
+            <com.drops.waterdrop.widget.KVCombinationView
+                android:id="@+id/ftid_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="18dp"
+                app:kvBackground="@color/color_grey_fafafa"
+                app:kvName="@string/account"
+                app:kvNameColor="@color/color_grey_888888"
+                app:kvValueColor="@color/color_grey_555555"
+                app:kvValueEditable="false"
+                app:kvValueGravity="left"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

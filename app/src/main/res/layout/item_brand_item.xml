@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="208dp"
+    android:background="@drawable/touch_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_good"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_qs_90x90" />
+
+    <TextView
+        android:id="@+id/tv_good_desc"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        tools:text="oh急哈哈哈哈哈啊哈哈哈哈啊哈哈哈啊哈哈" />
+
+    <TextView
+        android:id="@+id/tv_good_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/text_red"
+        android:textSize="14sp"
+        tools:text="1229" />
+
+</LinearLayout>

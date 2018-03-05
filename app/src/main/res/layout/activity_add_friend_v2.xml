@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aafv_root"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/layout_common_toolbar"/>
+    <LinearLayout
+        android:id="@+id/aafv_search"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/shape_white_round_bg_for_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_search"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/hint_search_friend"
+            android:textColor="@color/base_gray_e3"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/hint_phone_friend_recommend"
+        android:textColor="@color/base_gray_ca"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/aafv_registered"
+            android:text="@string/registered"
+            android:textColor="@color/base_gray_85"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/aafv_unregistered"
+            android:text="@string/unregistered"
+            android:textColor="@color/base_gray_85"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/aafv_viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="@string/tips_add_friend_no_permission"/>
+        <me.yokeyword.indexablerv.IndexableLayout
+            android:id="@+id/aafv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:indexBar_selectedTextColor="@color/colorPrimary"
+            app:indexBar_textColor="#666"
+            app:indexBar_textSize="10sp"
+            app:indexBar_textSpace="4dp"/>
+        <include layout="@layout/empty_view" />
+    </ViewFlipper>
+</LinearLayout>

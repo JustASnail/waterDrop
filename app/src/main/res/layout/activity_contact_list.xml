@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="@color/window_bg"
+                android:id="@+id/rl_container"
+                android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/title"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sele_commn_back"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="4dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_commn_title"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            tools:text="title"
+            android:textStyle="bold"
+            android:maxLength="14"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@mipmap/icon_add_friend"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/add_friend"
+            android:layout_alignParentRight="true"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+    <me.yokeyword.indexablerv.IndexableLayout
+        android:id="@+id/indexableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        app:indexBar_layout_width="30dp"
+        app:indexBar_selectedTextColor="@color/color_activity_blue_bg"
+        app:indexBar_textColor="#666"
+        app:indexBar_textSize="10sp"
+        app:indexBar_textSpace="2dp"/>
+
+  <!--  <com.netease.nim.uikit.common.ui.drop.DropCover
+        android:id="@+id/unread_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />-->
+
+</RelativeLayout>

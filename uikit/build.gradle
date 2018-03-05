@@ -1,0 +1,94 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res', 'res-ptr2']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    greendao {
+        schemaVersion 2
+        daoPackage 'com.netease.nim.uikit.gen'
+        targetGenDir 'src'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+//    compile 'com.lqr.emoji:library:1.0.2'//表情键盘切换
+    compile 'com.zhy:autolayout:1.4.5'
+
+
+//    compile 'cn.bingoogolapple:bga-swipebacklayout:1.0.8@aar'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+
+    //快速索引
+    compile 'me.yokeyword:indexablerecyclerview:1.2.3'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    //万能的adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.16'
+
+    compile 'io.reactivex:rxjava:1.2.7'
+    compile 'io.reactivex:rxandroid:1.2.1'
+
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+
+    compile 'com.orhanobut:logger:1.15'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    //Glide图片框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    //Glide模糊、圆形图片
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+
+    //视频播放框架
+    compile 'com.shuyu:GSYVideoPlayer:1.6.7'
+
+    //微信
+//    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //数据库
+    compile 'org.greenrobot:greendao:3.2.0' // add library
+//扫码
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+
+
+
+
+}

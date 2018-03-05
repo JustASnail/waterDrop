@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/window_bg"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_common_toolbar"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16sp"
+            android:text="手机号"
+            android:textColor="#666666"
+            android:layout_marginRight="24dp"
+            android:textSize="14sp"/>
+
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入注册时的手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_edt_hint"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/icon_sz_xc"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16sp"
+            android:text="验证码"
+            android:layout_marginRight="24dp"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+
+        <EditText
+            android:id="@+id/edt_sms"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="输入短信验证码"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_edt_hint"
+            android:textSize="14sp"/>
+
+        <com.drops.waterdrop.widget.CountDownTimerButton
+            android:id="@+id/btn_getAuthCode"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/sele_btn_time"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16sp"
+            android:text="新密码"
+            android:layout_marginRight="24dp"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+
+        <EditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请在此输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/color_edt_hint"
+            android:textSize="14sp"/>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cib_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:button="@drawable/sele_eye_check"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_reset"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/sele_btn_regist"
+            android:enabled="true"
+            android:text="确认修改"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+</LinearLayout>

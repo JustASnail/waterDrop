@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">水滴无界</string>
+
+    <string name="title_pay_h5">水滴APP</string>
+
+    <!--********************************      聊 天      ********************************-->
+    <string name="message_history_query">云消息记录</string>
+    <string name="message_search_title">搜索本地消息记录</string>
+    <string name="message_clear">清空本地消息记录</string>
+
+    <!-- 云信SDK所需文案 -->
+    <string name="nim_status_bar_multi_messages_incoming">%1$d位联系人有新消息</string>
+    <string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+    <string name="nim_status_bar_image_message">%1$s发来一条图片消息</string>
+    <string name="nim_status_bar_audio_message">%1$s发来一条语音消息</string>
+    <string name="nim_status_bar_video_message">%1$s发来一条视频消息</string>
+    <string name="nim_status_bar_file_message">%1$s发来一条文件消息</string>
+    <string name="nim_status_bar_location_message">%1$s分享了一个地理位置</string>
+    <string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+    <string name="nim_status_bar_custom_message">%1$s: 自定义消息</string>
+    <string name="nim_status_bar_unsupported_message">%1$s: 无法显示该内容</string>
+    <string name="nim_status_bar_hidden_msg_content">你收到一条新消息</string>
+
+    <string name="login">登录</string>
+    <string name="logining">登录中\u2026</string>
+
+    <string name="kickout_notify">下线通知</string>
+    <string name="kickout_content">您的账号在另一台设备上登录，您被迫下线。如非本人操作，您的密码很可能已经泄露，建议您修改密码！</string>
+    <string name="prepare_data">正在准备数据...</string>
+    <string name="main_tab_session">消息</string>
+    <string name="main_tab_find">发现</string>
+    <string name="main_tab_home">首页</string>
+    <string name="main_tab_activ">活动</string>
+    <string name="main_tab_mine">我的</string>
+
+    <string name="net_broken">当前网络不可用</string>
+    <string name="nim_status_unlogin">未登录</string>
+    <string name="nim_status_connecting">连接中...</string>
+    <string name="nim_status_logining">登录中...</string>
+    <string name="login_failed">账号或密码错误</string>
+    <string name="reget_sms_code_countdown">重新发送</string>
+    <string name="register_password_tip">密码必须为6~16位字母或者数字</string>
+    <string name="user_not_exsit">该用户不存在</string>
+    <string name="user_tips">请检查你输入的账号是否正确</string>
+
+
+    <string name="new_friend">新的好友</string>
+    <string name="verify">身份验证</string>
+    <string name="send">发送</string>
+    <string name="add_address">添加新地址</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+
+    <string name="user_info">个人信息修改</string>
+    <string name="setting">设置</string>
+    <string name="my_order">我的订单</string>
+    <string name="order_detail">订单详情</string>
+    <string name="my_ticket">我的门票</string>
+    <string name="get_ticket">我要领票</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="order_details">订单详情</string>
+    <string name="order_confirm">订单确认</string>
+    <string name="pay_result">支付结果</string>
+    <string name="comment">评分</string>
+    <string name="ticket_notes">注： 门票领取将在活动结束后7个工作日开放， 为了保证您的门票可以顺利领取， 在此期间请勿退换货！</string>
+    <string name="id_card_notes">身份证正反面照片或扫描件（支持JPG， PNG文件， 图片大小不超过5M）</string>
+    <string name="get_ticket_notes">注： 以上所填信息一经提交， 不得修改， 请仔细核对您的信息！</string>
+    <string name="comment_notice">您的评价将以匿名的形式发布</string>
+    <string name="user_info_update_cancel">取消更新</string>
+    <string name="user_info_update_failed">设置失败， 请重试</string>
+
+
+    <!--添加银行卡-->
+    <string name="add_bank_card">＋添加银行帐户</string>
+    <string name="company_account">公司帐户</string>
+    <string name="person_account">银行帐户</string>
+    <string name="company_name">公司名称</string>
+    <string name="person_name">账户名称</string>
+    <string name="bank_name">银行名称</string>
+    <string name="create_account_province">开户省</string>
+    <string name="create_account_city">开户市</string>
+    <string name="create_account_bank">开户行</string>
+    <string name="transfer_info">转账信息</string>
+    <string name="transfer_certificate">转账凭证</string>
+    <string name="please_select">请选择</string>
+    <string name="look">查看</string>
+    <string name="submit_review">提交审核</string>
+    <string name="bind_date">申请绑定时间</string>
+    <string name="apply_status">申请状态</string>
+    <string name="re_submit">重新提交</string>
+    <string name="account_name">户名</string>
+    <string name="account">账号</string>
+    <string name="registered">已注册</string>
+    <string name="unregistered">未注册</string>
+
+    <string name="hint_company_account">请输入公司帐户</string>
+    <string name="hint_person_account">请输入您的银行帐号</string>
+    <string name="hint_company_name">请输入公司名称</string>
+    <string name="hint_person_name">请输入您的账户名称</string>
+    <string name="hint_bank_name">请输入银行名称</string>
+    <string name="hint_create_account_bank">请输入开户行</string>
+    <string name="hint_transfer_certificate">请上传凭证图片</string>
+    <string name="hint_submit_review"><Data><![CDATA[注：请仔细核对您的信息，一经提交不得修改！为了确保您的身份及所填信息的真实性，请向转账信息中的帐号成功完成一笔0.01元的转账，并<font color="#03B1FF">上传转账成功的凭证</font>！]]></Data></string>
+    <string name="hint_bind_bank_card_fail">未通过原因：账户名不正确余额不足或者等等其它不能提现的原因。</string>
+    <string name="hint_search_friend">在此搜索你的好友</string>
+    <string name="hint_phone_friend_recommend">手机通讯录好友推荐</string>
+
+    <string name="tips_add_friend_no_permission">没有开启获取通讯录的权限,请在设置里开启</string>
+    <string name="tips_collect_num"><Data><![CDATA[有<font color="#01D9AE">%1$d</font>位好友收藏]]></Data></string>
+    <string name="tips_identity_tips">因海关需求，\n需要完善收货人身份证信息</string>
+    <string name="tips_null">没有相关数据</string>
+    <string name="tips_member_center_become_method_1"><Data><![CDATA[<font color="#666666">方式1：</font>激活码激活]]></Data></string>
+    <string name="tips_member_center_become_method_2"><Data><![CDATA[<font color="#666666">方式2：</font>关注微信公众号购买]]></Data></string>
+    <string name="tips_member_center_become_method_3"><Data><![CDATA[<font color="#666666">方式2：</font>直接购买水滴超级会员]]></Data></string>
+    <string name="tips_active_input_content">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="info_complete">已完善</string>
+    <string name="info_incomplete">未完善</string>
+
+    <!--分享-->
+    <string name="share_to">分享到</string>
+    <string name="share_pool">水塘</string>
+    <string name="share_water_friend">水滴好友</string>
+    <string name="share_wechat">微信</string>
+    <string name="share_wechat_moment">朋友圈</string>
+    <string name="share_sina">微博</string>
+    <string name="share_cancel">取消</string>
+    <string name="shui_tie">浪过的水帖</string>
+    <string name="shui_tang">游过的水塘</string>
+    <string name="shui_bao">水宝</string>
+    <string name="my_stie">我的水帖</string>
+    <string name="order_all">全部</string>
+    <string name="order_non_payment">待付款</string>
+    <string name="order_unshipped">待发货</string>
+    <string name="order_unreceive">待收货</string>
+    <string name="order_finish">已完成</string>
+    <string name="main_tab_shui_tie">水帖</string>
+    <string name="main_tab_pool">水塘</string>
+    <string name="main_tab_store">商城</string>
+    <string name="order_exchange">退换/售后</string>
+    <string name="collection_post">收藏的水帖</string>
+    <string name="buy_post">买过的水帖</string>
+    <string name="set_private">隐私设置</string>
+    <string name="set_finish">完成</string>
+    <string name="order_uncomment">待评价</string>
+    <string name="qr_failed">小主，请您检查网络或确认扫描的二维码！</string>
+    <string name="qr_failed1">小主，该内容不存在或已下架！</string>
+    <string name="good_unshelve">小主，该商品不存在或已下架！</string>
+    <string name="bind_account_hint">注：请仔细核对您的信息，一经提交不得修改！为了确保您的身份及所填信息的真实性，
+    请向转账信息中的账号成功完成一笔0.01元的转账，并</string>
+    <string name="bind_account_hint2">上传转账成功的凭证！</string>
+
+    <string name="put_id_card_notes">身份证正反面照片或扫描件（支持jpg，png文件，图片大小不超过5M）</string>
+
+
+</resources>

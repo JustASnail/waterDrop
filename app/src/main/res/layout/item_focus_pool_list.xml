@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="208dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:src="#40000000">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:background="#4000"
+                android:layout_width="match_parent"
+                android:layout_height="158dp" />
+
+            <ImageView
+                android:id="@+id/iv_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/icon_sc_yjyc" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/icon_wd_wdsc_time"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="2017/7/4" />
+
+            <TextView
+                android:id="@+id/tv_focus_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/icon_st_gzrs"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:text="123123" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    tools:text="MTV全球华语音乐盛典" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="55dp"
+                    tools:text="对mtv感兴趣的小伙伴们赶紧上车吧…" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                tools:background="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:textSize="@dimen/sp_12"
+                tools:text="哈哈哈" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@mipmap/icon_wd_wdsc_delete"
+                android:drawablePadding="7dp"
+                android:text="删除"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5000"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/iv_check"
+            android:layout_width="match_parent"
+            android:layout_height="158dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_sc_szys" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_unselect"
+            android:layout_width="match_parent"
+            android:layout_height="158dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/sele_btn_add_friend"
+                android:gravity="center"
+                android:text="点击选择不公开"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>
